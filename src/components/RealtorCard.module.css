@@ -1,0 +1,194 @@
+.card {
+    border: 1px solid #BCBEC0;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.profession {
+    color: #4f4f4f;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.name {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.contactInfoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.contactInfoItem+.contactInfoItem {
+    margin-top: 12px;
+}
+
+.contactInfoItem a {
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+.contactInfoItem svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contactUnited {
+    display: none;
+}
+
+@media (max-width: 1920px) {
+
+    .photo {
+        width: 112px;
+        height: 112px;
+        margin-right: 24px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .profession {
+        margin-bottom: 0px;
+    }
+
+    .nameAndProfession {
+        margin-bottom: 8px;
+    }
+
+    .contactSeparate {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    .card {
+        padding: 24px 32px;
+    }
+
+    .contactUnited {
+        display: flex;
+        margin-left: -6px;
+        margin-right: -6px;
+        row-gap: 12px;
+    }
+
+    .contactInfoItemWrapper {
+        flex: 0 0 50.00000000%;
+        max-width: 50.00000000%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .contactInfoItem+.contactInfoItem {
+        margin-top: 0;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .contactInfoItem {
+        padding: 8px 16px;
+    }
+
+    .contactInfoItem a {
+        font-size: 16px;
+    }
+
+    .contactInfoItem svg {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .contactUnited {
+        display: none;
+    }
+
+    .header {
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .profession {
+        margin-bottom: 8px;
+    }
+
+    .contactSeparate {
+        display: block;
+    }
+
+    .contactInfoItem + .contactInfoItem {
+        margin-top: 12px;
+    }
+
+    .photo {
+        width: 80px;
+        height: 80px;
+        margin-right: 16px;
+    }
+
+    .nameAndProfession {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .card {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .photo {
+        width: 56px;
+        height: 56px;
+        margin-right: 12px;
+    }
+
+    .profession {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .header {
+        margin-bottom: 16px;
+    }
+
+}

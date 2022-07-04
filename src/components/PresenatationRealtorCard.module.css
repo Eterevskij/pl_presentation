@@ -1,0 +1,384 @@
+.photoWrapper {
+    display: block;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+}
+
+.photoWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-list) {
+    border-radius: 12px
+}
+
+.fullScreen {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.mainPart {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #EDEDED;
+    display: flex;
+    padding: 32px;
+    row-gap: 32px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.realtorCard {
+    width: auto;
+}
+
+.realtorCardWrapper+.realtorCardWrapper {
+    margin-top: 52px;
+}
+
+.infoWrapper {
+    display: block;
+    flex: 0 0 50.00000000%;
+    max-width: 50.00000000%;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+}
+
+.photoWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-dots) li {
+    width: 40px;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.carouselWrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.photoWrapper .carouselWrapper :global(.ant-carousel) .carouselArrow,
+.photoWrapper .carouselWrapper :global(.ant-carousel) :global(.slick-dots),
+.photoWrapper .fullScreen {
+    opacity: 0 !important;
+    transition: 0.2s opacity ease-in-out;
+}
+
+.photoWrapper:hover .carouselWrapper :global(.ant-carousel) .carouselArrow,
+.photoWrapper:hover .carouselWrapper :global(.ant-carousel) :global(.slick-dots),
+.photoWrapper:hover .fullScreen {
+    opacity: 1 !important;
+}
+
+.carouselItem {
+    width: 100%;
+}
+
+.tag {
+    color: #4f4f4f;
+    font-size: 16px;
+    padding: 4px 16px;
+    background: #f4f4f4;
+    border-radius: 6px;
+    border: none;
+    margin-right: 0;
+}
+
+.tag+.tag {
+    margin-left: 12px;
+}
+
+.tags {
+    margin-bottom: 24px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.totalPrice {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 32px;
+    margin-right: 16px;
+}
+
+.priceForM2 {
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
+.properties {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -6px;
+    margin-right: -6px;
+    row-gap: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.propertyItemWrapper {
+    display: block;
+    flex: 0 0 50.00000000%;
+    max-width: 50.00000000%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.propertyItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.propertyName {
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.propertyValue {
+    color: #2b2b2b;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.expandButton {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(40px + 12px);
+    height: calc(40px + 12px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #F4F4F4 !important;
+    box-shadow: none !important;
+    z-index: 10;
+    transition: 0.3s background ease-in-out;
+}
+
+.expandButton svg {
+    transition: 0.3s transform ease-in-out;
+}
+
+.expandButton.active {
+    background: #2b2b2b !important;
+}
+
+.expandContainer :global(.ant-collapse-header) {
+    border: 1px solid red !;
+    display: none !important;
+}
+
+.expandButton.active svg {
+    transform: rotate(180deg);
+}
+
+.expandButton svg path {
+    transition: 0.3s fill;
+}
+
+.expandButton.active svg path {
+    fill: #fff;
+}
+
+.expandButton svg {
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.expandText {
+    color: #4f4f4f;
+    font-size: 18px;
+}
+
+.expandContainer {
+    border: none !important;
+}
+
+.expandWrapper {
+    margin-top: 8px;
+    border: none !important;
+    border-radius: 16px;
+}
+
+.expandContainer :global(.ant-collapse-content) {
+    border: 1px solid #EDEDED !important;
+    border-radius: 16px !important;
+}
+
+.expandContainer :global(.ant-collapse-content) :global(.ant-collapse-content-box) {
+    padding: 32px;
+}
+
+.carouselArrow {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.24);
+}
+
+.carouselArrow.left {
+    left: 24px;
+}
+
+.carouselArrow.right {
+    right: 24px;
+}
+
+.carouselArrow.left svg {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1920px) {
+
+    .mainPart {
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+
+    .carouselWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-list) {
+        height: 405px;
+    }
+
+    .carouselWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-list) :global(.slick-track) {
+        position: absolute;
+        top: -50%;
+    }
+
+    .photoWrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .properties {
+        position: static;
+        width: auto;
+    }
+
+    .infoWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .prices {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .carouselWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-list) {
+        height: 440px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .carouselWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-list) {
+        height: auto;
+    }
+
+    .carouselWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-list) :global(.slick-track) {
+        position: relative;
+        top: 0;
+    }
+
+    .realtorCardWrapper+.realtorCardWrapper {
+        margin-top: 62px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .propertyItemWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+    }
+
+    .carouselArrow {
+        display: none;
+    }
+
+    .fullScreen {
+        display: none;
+    }
+
+    .photoWrapper .carouselWrapper :global(.ant-carousel) :global(.slick-dots) {
+        opacity: 1 !important;
+    }
+
+    .mainPart {
+        padding: 24px 24px 32px;
+    }
+
+    .expandContainer :global(.ant-collapse-content) :global(.ant-collapse-content-box) {
+        padding: 24px;
+    }
+
+    .photoWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-dots) {
+        bottom: 0 !important;
+    }
+
+    .realtorCardWrapper+.realtorCardWrapper {
+        margin-top: 44px;
+    }
+
+    .propertyItem {
+        padding: 8px 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .mainPart {
+        padding: 16px 16px 32px;
+    }
+
+    .totalPrice {
+        font-size: 24px;
+    }
+
+    .tag {
+        font-size: 14px;
+    }
+
+    .prices {
+        flex-wrap: wrap;
+    }
+
+    .totalPrice {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .photoWrapper :global(.ant-carousel) :global(.slick-slider) :global(.slick-dots) {
+        margin-bottom: 9px !important;
+    }
+
+}

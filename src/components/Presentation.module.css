@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.titleWrapper {
+    display: block;
+    flex: 0 0 54.16666667%;
+    max-width: 54.16666667%;
+}
+
+.title {
+    color: #2b2b2b;
+    font-weight: 700;
+    font-size: 64px;
+    font-family: Montserrat;
+}
+
+.title .city {
+    white-space: nowrap;
+}
+
+.realtorCardWrapper {
+    display: block;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+
+.topInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+}
+
+.sort :global(.ant-select-selector) {
+    padding-left: 35px;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding-left: 12px !important;
+}
+
+.sortSelect :global(.ant-select-arrow) {
+    display: none;
+}
+
+.sort :global(.ant-select-selector) :global(.ant-select-selection-item) {
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sort :global(.ant-select-arrow) {
+    border: none;
+    background: transparent;
+    box-shadow: none !important;
+    left: 0;
+    position: absolute;
+}
+
+.cardsNumAndSort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.totalAd {
+    font-size: 16px;
+    color: #2b2b2b;
+    white-space: nowrap;
+}
+
+.totalAd .num {
+    font-weight: 600;
+}
+
+@media (max-width: 1920px) {
+
+    .titleWrapper {
+        flex: 0 0 50.00000000%;
+        max-width: 50.00000000%;
+    }
+
+    .realtorCardWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+    }
+
+    .title {
+        margin-bottom: 32px;
+        font-size: 48px;
+    }
+
+    .topInfo {
+        margin-bottom: 56px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .title {
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+
+    .titleWrapper {
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .titleWrapper {
+        flex: 0 0 50.00000000%;
+        max-width: 50.00000000%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+
+    .cardsNumAndSort {
+        flex-wrap: wrap-reverse
+    }
+
+    .titleWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+    }
+
+    .totalAdWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+        margin-bottom: 16px;
+    }
+
+    .sort {
+        justify-content: center;
+        width: 100%;
+        border: 1px solid #BCBEC0;
+        padding: 8px 0;
+        border-radius: 6px;
+    }
+
+    .sortWrapper {
+        width: 100%;
+    }
+
+    .totalAdWrapper {
+        margin-bottom: 16px;
+    }
+
+    .topInfo {
+        margin-bottom: 48px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .title {
+        margin-bottom: 24px;
+        font-size: 24px;
+    }
+
+}
